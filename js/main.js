@@ -47,21 +47,21 @@ const songs = [
     artist: "Jaci Velasquez",
     reason: "Porque suena a una promesa tranquila, de esas que se guardan con cariño.",
     url: "https://www.youtube.com/results?search_query=Jaci+Velasquez+Solo+Tu",
-    audioSrc: "assets/audio/jaci velazquez solo tu.mp3",
+    audioSrc: "assets/audio/solo-tu.mp3",
   },
   {
     name: "Mi Alma Entre Tus Manos",
     artist: "Jorge Pardo",
     reason: "Porque tiene esa forma íntima de decir que alguien ocupa un lugar muy profundo.",
     url: "https://www.youtube.com/results?search_query=Jorge+Pardo+Mi+Alma+Entre+Tus+Manos",
-    audioSrc: "assets/audio/Jorge Pardo Mi Alma Entre Tus Manos.mp3",
+    audioSrc: "assets/audio/mi-alma-entre-tus-manos.mp3",
   },
   {
     name: "No Morirá",
     artist: "No Matter What",
     reason: "Porque hay canciones que se sienten como esperanza, fe y amor permaneciendo.",
     url: "https://www.youtube.com/results?search_query=No+Morira+No+Matter+What",
-    audioSrc: "assets/audio/No Morirá (No Matter What).mp3",
+    audioSrc: "assets/audio/dlg-no-morira.mp3",
   },
 ];
 
