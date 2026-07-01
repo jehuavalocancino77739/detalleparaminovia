@@ -10,14 +10,14 @@ const CONFIG = {
 const dailyMessages = [
   "Alexandra, hoy quiero recordarte algo simple: incluso en los días silenciosos, sigues siendo una de mis partes favoritas del mundo.",
   "Ojalá esta página te abrace un poquito cada vez que la abras, Alexandra.",
-  "No necesitaba una fecha perfecta para hacerte esto. Solo necesitaba pensar en Alexandra.",
+  "No necesitaba una fecha perfecta para hacerte esto. Solo necesitaba pensar en ti mi amor.",
   "Alexandra, eres hogar en forma de persona, y eso no se encuentra todos los días.",
 ];
 
 const letters = [
   {
     title: "Ábreme cuando estés triste.",
-    body: "Respira conmigo, Alexandra. No tienes que poder con todo ahora. Estoy orgulloso de ti por seguir aquí, incluso cuando el día pesa.",
+    body: "Respira conmigo, Alexandra. No tienes que poder con todo ahora. Estoy orgulloso de ti por seguir aquí, incluso en los días malos.",
   },
   {
     title: "Ábreme cuando me extrañes.",
@@ -25,7 +25,7 @@ const letters = [
   },
   {
     title: "Ábreme cuando necesites sonreír.",
-    body: "Me encanta esa sonrisa tuya, Alexandra, esa que aparece poquito a poco, como si el mundo se iluminara sin hacer ruido.",
+    body: "Me encanta esa sonrisa tuya, esa que aparece poquito a poco, como si el mundo se iluminara sin hacer ruido.",
   },
   {
     title: "Ábreme cuando quieras recordar cuánto significas para mí.",
@@ -33,11 +33,11 @@ const letters = [
   },
   {
     title: "Ábreme cuando tengas un día difícil.",
-    body: "Este día no define tu belleza, tu fuerza ni tu valor, Alexandra. Solo es un día. Yo sigo viéndote con los mismos ojos llenos de cariño.",
+    body: "Este día no define tu belleza, tu fuerza ni tu valor. Solo es un día. Yo sigo viéndote con los mismos ojos llenos de cariño.",
   },
   {
     title: "Ábreme cuando quieras sentirte abrazada.",
-    body: "Este es mi abrazo guardado para ti, Alexandra: lento, fuerte, sin prisa, de esos que dicen 'aquí estoy' sin necesitar más.",
+    body: "Este es mi abrazo guardado para ti: lento, fuerte, sin prisa, de esos que dicen 'aquí estoy' sin necesitar más.",
   },
 ];
 
@@ -67,19 +67,19 @@ const songs = [
 
 const specialDates = [
   {
-    date: "Agrega una fecha",
-    title: "El día que quiero recordar",
-    note: "Escribe aquí una fecha importante para ustedes y por qué merece quedarse guardada.",
+    date: "miércoles, 14 de marzo de 2026",
+    title: "El día que te dije que me gustabas",
+    note: "Aquel día que no podía dormir porque me di cuenta que me gustabas tanto y desde ese día empece a quererte.",
   },
   {
-    date: "Próximo recuerdo",
-    title: "Un plan bonito",
-    note: "Puedes usar este espacio para una salida, una promesa o una sorpresa que quieras preparar.",
+    date: "lunes, 30 de marzo de 2026",
+    title: "tu primer te quiero",
+    note: "Ese día que estuve en el salón y tu ibas a ir al cine y me dijiste que me querias, fue la primera vez que lo hiciste.",
   },
   {
-    date: "Nueva fecha especial",
-    title: "Otro momento para guardar",
-    note: "Agrega aquí otra fecha importante para ustedes y el recuerdo que quieres conservar.",
+    date: "miércoles, 1 de abril de 2026",
+    title: "Cuando nos dimos nuestro primer beso",
+    note: "Jamas olvidaré ese dia que sentí tus abrazos y tus besos y espero con ansias volver a hacerlo.",
   },
 ];
 
@@ -98,42 +98,42 @@ const photoMemories = [
 
 const littleThings = [
   "La manera en que Alexandra hace que lo cotidiano se sienta especial.",
-  "Tu forma de escuchar, Alexandra, incluso cuando no sabes cuánto ayuda.",
+  "Tu forma de escuchar, Alexandra, incluso cuando no sabes cuánto me ayuda.",
   "La ternura que aparece en tus detalles más pequeños.",
   "Tu risa, porque cambia el ambiente completo.",
-  "Tu fuerza tranquila, esa que no presume y aun así sostiene.",
-  "La paz que siento cuando pienso en Alexandra.",
+  "La manera en que te esfuerzas por ayudar a los demás sin esperar nada a cambio.",
+  "La paz que siento cuando pienso en ti.",
 ];
 
 const surprises = [
   "Alexandra, hoy mereces algo bonito, aunque sea pequeño: una pausa, una sonrisa y saber que te quiero.",
-  "Estoy pensando en Alexandra. Sí, justo ahora que abriste esto.",
+  "Estoy pensando en ti. Sí, justo ahora que abriste esto.",
   "Nunca olvides lo mucho que iluminas mi vida, Alexandra.",
-  "Si el día se siente pesado, guarda esta frase: estoy contigo.",
-  "Hay personas que son lugar seguro. Alexandra, tú eres el mío.",
+  "Si tu día se siente pesado, guarda esta frase: estoy contigo siempre.",
+  "Hay personas que son un lugar seguro y tú eres el mío.",
 ];
 
 const spiritualCorner = {
   verses: [
     {
-      reference: "Jeremías 29:11",
-      verse: "Escribe aquí el versículo completo que quieres compartir con Alexandra.",
-      reflection: "Escribe aquí tu reflexión personal sobre lo que este versículo significa para ustedes.",
+      reference: "1 de Corintios 13:4-7",
+      verse: "El amor es paciente y bondadoso. El amor no es celoso. No presume, no es arrogante, no se porta de forma indecente, no busca sus propios intereses, no se irrita con facilidad. No lleva cuenta del daño. No se alegra por la injusticia, sino que se alegra con la verdad. Todo lo soporta, todo lo cree, todo lo espera, todo lo aguanta..",
+      reflection: "No puedo evitar pensar en ti. Este pasaje describe un amor que se demuestra con hechos: paciencia, bondad, generosidad y un corazón que busca el bienestar de los demás. Son cualidades que veo que reflejas, especialmente en la forma tan cariñosa y dedicada con la que trata a tu familia. Me gusta ver cómo siempre estás pendiente de quienes amas y cómo, con tus acciones, demuestras ese amor del que habla la Biblia. Eso me recuerda que el amor verdadero no consiste solo en decir lo que sentimos, sino en demostrarlo cada día. Sin duda, esa manera de amar que tienes es una cualidad muy hermosa y un reflejo de los principios que Jehová nos enseña",
     },
     {
-      reference: "1 Corintios 13:4",
-      verse: "Escribe aquí otro versículo importante para ustedes.",
-      reflection: "Agrega una reflexión tranquila, sincera y escrita por ti.",
+      reference: "Cantar de los cantares 4:7",
+      verse: "Eres absolutamente bella, amada mía; no hay defecto en ti.",
+      reflection: "Este texto siempre me recuerda a ti. Me recuerda lo hermosa que eres, no solo por fuera, sino también por la persona que demuestras ser cada día. Es un versículo que expresa admiración sincera, y eso es precisamente lo que siento cuando pienso en ti. Doy gracias a Jehová por haber puesto a alguien tan especial en mi camino",
     },
     {
-      reference: "Salmos 46:10",
-      verse: "Escribe aquí el texto del versículo que quieras guardar en este rincón.",
-      reflection: "Agrega aquí por qué este versículo les da paz, esperanza o dirección.",
+      reference: "Proverbios 17:17",
+      verse: "El verdadero amigo ama en todo momento y es un hermano en tiempos de angustia.",
+      reflection: "Este versículo me hace pensar en ti, porque he visto la forma tan bonita en la que valoras a tus amigos. Siempre procuras estar para ellos, escucharlos, apoyarlos y hacerles sentir que pueden contar contigo. Esa manera tan sincera de demostrar cariño y lealtad es una cualidad que admiro mucho de ti. Me recuerda que un verdadero amigo no solo está en los buenos momentos, sino que también permanece cuando más se le necesita.",
     },
   ],
   wish: {
     title: "Mi mayor deseo",
-    text: "Mi mayor deseo es que nuestra relación siempre tenga paz, fe y un amor que nos acerque a lo bueno. Que podamos cuidarnos con ternura, orar por nuestros días y encontrar esperanza incluso en los momentos difíciles.",
+    text: "Mi mayor deseo es que nuestra relación se fortalezca cada día, poder seguir enamorándome cada día más de ti. Que podamos cuidarnos con ternura, orar por nuestros días y encontrar esperanza incluso en los momentos difíciles.",
   },
 };
 
@@ -250,7 +250,7 @@ function getThemeConfig(hour) {
     return {
       name: "morning",
       starVisibility: 0.12,
-      greeting: "Buenos días. Espero que hoy tengas un día muy bonito. ☀️",
+      greeting: "Buen día. Espero que hoy tengas un día muy bonito. ☀️",
     };
   }
 
@@ -265,7 +265,7 @@ function getThemeConfig(hour) {
   return {
     name: "night",
     starVisibility: 1,
-    greeting: "Si hoy fue un día largo, descansa. Este pequeño rincón siempre estará aquí para ti. 🌙",
+    greeting: "Si hoy fue un día largo, descansa. Este pequeño sitio siempre estará aquí para ti. 🌙",
   };
 }
 
