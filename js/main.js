@@ -43,25 +43,25 @@ const letters = [
 
 const songs = [
   {
-    name: "Perfect",
-    artist: "Ed Sheeran",
-    reason: "Porque habla de mirar a alguien y sentir que no hace falta buscar más.",
-    url: "https://www.youtube.com/results?search_query=Perfect+Ed+Sheeran",
-    audioSrc: "",
+    name: "Solo Tú",
+    artist: "Jaci Velasquez",
+    reason: "Porque suena a una promesa tranquila, de esas que se guardan con cariño.",
+    url: "https://www.youtube.com/results?search_query=Jaci+Velasquez+Solo+Tu",
+    audioSrc: "assets/audio/jaci velazquez solo tu.mp3",
   },
   {
-    name: "Yellow",
-    artist: "Coldplay",
-    reason: "Porque tiene esa forma suave de decir que alguien ilumina todo.",
-    url: "https://www.youtube.com/results?search_query=Yellow+Coldplay",
-    audioSrc: "",
+    name: "Mi Alma Entre Tus Manos",
+    artist: "Jorge Pardo",
+    reason: "Porque tiene esa forma íntima de decir que alguien ocupa un lugar muy profundo.",
+    url: "https://www.youtube.com/results?search_query=Jorge+Pardo+Mi+Alma+Entre+Tus+Manos",
+    audioSrc: "assets/audio/Jorge Pardo Mi Alma Entre Tus Manos.mp3",
   },
   {
-    name: "Until I Found You",
-    artist: "Stephen Sanchez",
-    reason: "Porque suena a promesa sencilla, bonita y sincera.",
-    url: "https://www.youtube.com/results?search_query=Until+I+Found+You+Stephen+Sanchez",
-    audioSrc: "",
+    name: "No Morirá",
+    artist: "No Matter What",
+    reason: "Porque hay canciones que se sienten como esperanza, fe y amor permaneciendo.",
+    url: "https://www.youtube.com/results?search_query=No+Morira+No+Matter+What",
+    audioSrc: "assets/audio/No Morirá (No Matter What).mp3",
   },
 ];
 
@@ -80,14 +80,14 @@ const specialDates = [
 
 const photoMemories = [
   {
-    title: "Alexandra en mi universo",
-    note: "Guarda una imagen en assets/images y coloca aquí su ruta, por ejemplo: assets/images/alexandra.jpg",
-    src: "",
+    title: "Alexandra",
+    note: "Una de esas fotitos que hacen que este rincón se sienta todavía más suyo.",
+    src: "assets/images/foto1.jpeg",
   },
   {
     title: "Mi foto favorita de Alexandra",
-    note: "Ese espacio para una sonrisa suya que quieras mirar muchas veces.",
-    src: "",
+    note: "Un recuerdo para mirar despacio, como quien guarda algo bonito cerca del corazón.",
+    src: "assets/images/foto2.jpeg",
   },
 ];
 
