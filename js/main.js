@@ -76,6 +76,11 @@ const specialDates = [
     title: "Un plan bonito",
     note: "Puedes usar este espacio para una salida, una promesa o una sorpresa que quieras preparar.",
   },
+  {
+    date: "Nueva fecha especial",
+    title: "Otro momento para guardar",
+    note: "Agrega aquí otra fecha importante para ustedes y el recuerdo que quieres conservar.",
+  },
 ];
 
 const photoMemories = [
@@ -322,7 +327,7 @@ function renderMusic() {
       createElement("p", "", `${song.artist} · ${song.reason}`)
     );
 
-    const playerButton = createElement("button", "music-card__play", "Usar en reproductor");
+    const playerButton = createElement("button", "music-card__play", "Reproducir");
     playerButton.type = "button";
     playerButton.addEventListener("click", () => loadSong(index, true));
 
@@ -338,6 +343,9 @@ function renderMusic() {
 }
 
 function setupMusicPlayer() {
+  audioPlayer.controls = true;
+  audioPlayer.setAttribute("playsinline", "");
+
   playerToggle.addEventListener("click", togglePlayer);
   playerPrev.addEventListener("click", () => changeSong(-1));
   playerNext.addEventListener("click", () => changeSong(1));
@@ -362,7 +370,7 @@ function loadSong(index, shouldPlay) {
     : `${song.artist} · Agrega el archivo en assets/audio para reproducirla aquí.`;
 
   audioPlayer.pause();
-  audioPlayer.src = song.audioSrc;
+  audioPlayer.src = encodeURI(song.audioSrc);
   audioPlayer.load();
   playerToggle.textContent = "Play";
   musicPlayer.classList.remove("is-playing");
