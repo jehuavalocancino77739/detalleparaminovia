@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Una caja de regalo digital, íntima y elegante."
+    />
+    <title>Regalo para mi novia</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <canvas id="star-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <div class="cursor-halo" id="cursor-halo" aria-hidden="true"></div>
+
+    <main>
+      <section class="intro" id="intro" aria-label="Inicio del regalo">
+        <div class="intro__content">
+          <div class="intro-lines" aria-live="polite">
+            <p class="intro-line">Hola, Alexandra.</p>
+            <p class="intro-line">Hay algo que quería hacer para ti.</p>
+            <p class="intro-line">No es un regalo perfecto...</p>
+            <p class="intro-line">Pero está hecho con todo mi corazón.</p>
+          </div>
+
+          <p class="intro-note">
+            Este lugar fue creado para una sola persona. Y esa persona eres tú, Alexandra.
+          </p>
+
+          <div class="gift-scene" aria-hidden="true">
+            <div class="gift-box" id="gift-box">
+              <span class="gift-box__aura"></span>
+              <div class="gift-box__lid"></div>
+              <div class="gift-box__ribbon gift-box__ribbon--vertical"></div>
+              <div class="gift-box__ribbon gift-box__ribbon--horizontal"></div>
+              <div class="gift-box__body"></div>
+              <span class="gift-box__shine"></span>
+            </div>
+          </div>
+
+          <button class="primary-button" id="open-gift" type="button">
+            Abrir mi regalo
+          </button>
+        </div>
+      </section>
+
+      <section class="experience" id="experience" aria-label="Contenido del regalo">
+        <section class="hero panel reveal-section">
+          <p class="eyebrow">Caja digital</p>
+          <h1>Un pequeño universo hecho para Alexandra.</h1>
+          <p class="hero__copy">
+            Guardé aquí palabras, recuerdos y pequeños refugios para esos días
+            en los que quieras sentirme cerca.
+          </p>
+          <div class="daily-message" id="daily-message"></div>
+        </section>
+
+        <section class="section reveal-section alexandra-section" aria-labelledby="alexandra-title">
+          <div class="section-heading">
+            <p class="eyebrow">Para Alexandra</p>
+            <h2 id="alexandra-title">Este universo tiene tu nombre.</h2>
+          </div>
+          <div class="alexandra-card">
+            <p>
+              Si alguna vez dudas de lo especial que eres para mí,
+              vuelve a este rincón. Lo hice para recordarte, con calma y sin ruido,
+              que hay una parte de mi mundo que siempre va a pronunciar tu HERMOSO NOMBRE.
+            </p>
+          </div>
+        </section>
+
+        <section class="section reveal-section" aria-labelledby="letters-title">
+          <div class="section-heading">
+            <p class="eyebrow">Cartas</p>
+            <h2 id="letters-title">Para abrir cuando lo necesites</h2>
+          </div>
+          <div class="letters-grid" id="letters-grid"></div>
+        </section>
+
+        <section class="section reveal-section" aria-labelledby="music-title">
+          <div class="section-heading">
+            <p class="eyebrow">Nuestra música</p>
+            <h2 id="music-title">Canciones que me llevan a ti</h2>
+          </div>
+          <div class="music-player" id="music-player" aria-label="Reproductor de nuestra música">
+            <div class="music-player__art" aria-hidden="true">
+              <span></span>
+            </div>
+            <div class="music-player__content">
+              <p class="music-player__label">Reproduciendo ahora</p>
+              <h3 id="player-title">Elige una canción</h3>
+              <p id="player-artist">Agrega tus audios en assets/audio y actualiza js/main.js.</p>
+              <div class="music-player__progress">
+                <span id="player-current">0:00</span>
+                <input id="player-progress" type="range" min="0" max="100" value="0" aria-label="Progreso de la canción" />
+                <span id="player-duration">0:00</span>
+              </div>
+              <div class="music-player__controls">
+                <button class="player-button" id="player-prev" type="button" aria-label="Canción anterior">‹</button>
+                <button class="player-button player-button--main" id="player-toggle" type="button">Play</button>
+                <button class="player-button" id="player-next" type="button" aria-label="Siguiente canción">›</button>
+              </div>
+              <audio id="audio-player" preload="metadata"></audio>
+            </div>
+          </div>
+          <div class="music-grid" id="music-grid"></div>
+        </section>
+
+        <section class="section reveal-section" aria-labelledby="memories-title">
+          <div class="section-heading">
+            <p class="eyebrow">Fechas y fotitos</p>
+            <h2 id="memories-title">Momentos que quiero guardar</h2>
+          </div>
+          <div class="memories-layout">
+            <div class="dates-panel">
+              <h3>Nuestras fechas</h3>
+              <div class="dates-list" id="dates-list"></div>
+            </div>
+            <div class="photo-panel">
+              <div class="photo-panel__heading">
+                <h3>Fotitos de ella</h3>
+                <label class="upload-button" for="photo-upload">Subir fotitos</label>
+                <input id="photo-upload" type="file" accept="image/*" multiple />
+              </div>
+              <p class="photo-panel__note">
+                Las fotos que subas aquí se ven solo en este navegador. Para dejarlas fijas, guárdalas en assets/images y edítalas en js/main.js.
+              </p>
+              <div class="photo-grid" id="photo-grid"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal-section" aria-labelledby="little-title">
+          <div class="section-heading">
+            <p class="eyebrow">Las pequeñas cosas</p>
+            <h2 id="little-title">Cosas que amo de Alexandra</h2>
+          </div>
+          <div class="little-grid" id="little-grid"></div>
+        </section>
+
+        <section class="section reveal-section compact-section" aria-labelledby="surprise-title">
+          <div class="section-heading">
+            <p class="eyebrow">Sorpresas</p>
+            <h2 id="surprise-title">Cuando necesites sonreír</h2>
+          </div>
+          <button class="surprise-box" id="surprise-button" type="button">
+            Toca aquí cuando necesites una sorpresa
+          </button>
+          <p class="surprise-message" id="surprise-message" aria-live="polite"></p>
+        </section>
+
+        <section class="section reveal-section compact-section" aria-labelledby="secret-title">
+          <div class="section-heading">
+            <p class="eyebrow">Rincón secreto</p>
+            <h2 id="secret-title">Hay algo más guardado aquí.</h2>
+          </div>
+          <form class="secret-form" id="secret-form">
+            <label for="secret-password">Contraseña</label>
+            <div class="secret-form__row">
+              <input
+                id="secret-password"
+                name="password"
+                type="password"
+                autocomplete="off"
+                placeholder="Escribe la palabra secreta"
+              />
+              <button class="secondary-button" type="submit">Entrar</button>
+            </div>
+          </form>
+          <article class="secret-letter" id="secret-letter" hidden></article>
+        </section>
+
+        <section class="finale" id="finale" aria-label="Final">
+          <p>Gracias por abrir este pequeño rincón que hice para ti.</p>
+          <p>Espero que cada vez que vuelvas aquí encuentres un motivo para sonreír.</p>
+          <p>Mientras exista esta página... siempre habrá un lugar donde recordarte cuánto te quiero, Alexandra.</p>
+        </section>
+      </section>
+    </main>
+
+    <button class="message-toast" id="message-toast" type="button" hidden>
+      <span class="message-toast__icon">📩</span>
+      <span>
+        <small>Notificación</small>
+        Ale, tienes algo guardado aquí
+      </span>
+    </button>
+
+    <div class="special-letter-modal" id="special-letter-modal" aria-hidden="true">
+      <div class="special-letter-modal__backdrop" data-close-special></div>
+      <article class="special-letter-card" role="dialog" aria-modal="true" aria-labelledby="special-letter-title">
+        <button class="special-letter-card__close" type="button" data-close-special aria-label="Cerrar carta">×</button>
+        <p class="eyebrow">Mensaje nuevo</p>
+        <h2 id="special-letter-title">Para Alexandra</h2>
+        <p id="special-letter-text"></p>
+      </article>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
