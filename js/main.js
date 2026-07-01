@@ -851,7 +851,7 @@ function drawConstellation(now) {
 }
 
 function openGift(event) {
-  event?.preventDefault();
+  if (event && event.cancelable) event.preventDefault();
   if (openGiftButton.disabled || body.classList.contains("gift-opened")) return;
 
   giftBox.classList.add("opening");
@@ -892,7 +892,6 @@ function init() {
   window.setInterval(applyDynamicTheme, 60 * 1000);
   openGiftButton.addEventListener("click", openGift);
   openGiftButton.addEventListener("touchend", openGift, { passive: false });
-  openGiftButton.addEventListener("pointerup", openGift);
 
   if (!animationStarted) {
     animationStarted = true;
