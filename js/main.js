@@ -45,21 +45,21 @@ const songs = [
   {
     name: "Solo Tú",
     artist: "Jaci Velasquez",
-    reason: "Porque suena a una promesa tranquila, de esas que se guardan con cariño.",
+    reason: "Porque llenas a diario mi vida de ilusión y de alegría.",
     url: "https://open.spotify.com/track/0CyI87bfQzYbtnJVkT0oNP?si=MBtLSxFaSoWxmJY7W0Rmjg",
     audioSrc: "assets/audio/solo-tu.mp3",
   },
   {
     name: "Mi Alma Entre Tus Manos",
     artist: "Jorge Pardo",
-    reason: "Porque tiene esa forma íntima de decir que alguien ocupa un lugar muy profundo.",
+    reason: "Calmaste el miedo, hoy mi mundo es perfecto. Escuchando tu voz logro ver más allá.",
     url: "https://open.spotify.com/track/3w8u1bMMGEZLeUYp6RUtIe?si=potEziFOTeew7EOUnJOM9w",
     audioSrc: "assets/audio/mi-alma-entre-tus-manos.mp3",
   },
   {
     name: "No Morirá",
-    artist: "No Matter What",
-    reason: "Porque hay canciones que se sienten como esperanza, fe y amor permaneciendo.",
+    artist: "DLG",
+    reason: "Me has hecho tan feliz, nada me importa más que tú amor.",
     url: "https://open.spotify.com/track/2PsTyxNYFJ5AnjpYOUo3VN?si=iv-uDMX8R4GusMkBsHmOqw",
     audioSrc: "assets/audio/dlg-no-morira.mp3",
   },
@@ -85,13 +85,13 @@ const specialDates = [
 
 const photoMemories = [
   {
-    title: "Alexandra",
-    note: "Una de esas fotitos que hacen que este rincón se sienta todavía más suyo.",
+    title: "La más preciosa de la asamblea",
+    note: "Una de mis fotos favoritas, con tu vestido tan lindo que te veías radiante.",
     src: "assets/images/foto1.jpeg",
   },
   {
-    title: "Mi foto favorita de Alexandra",
-    note: "Un recuerdo para mirar despacio, como quien guarda algo bonito cerca del corazón.",
+    title: "La más hermosa de la boda",
+    note: "Una de las últimas fotitos que me mandaste donde sales hermosa .",
     src: "assets/images/foto2.jpeg",
   },
 ];
@@ -118,7 +118,7 @@ const spiritualCorner = {
     {
       reference: "1 de Corintios 13:4-7",
       verse: "El amor es paciente y bondadoso. El amor no es celoso. No presume, no es arrogante, no se porta de forma indecente, no busca sus propios intereses, no se irrita con facilidad. No lleva cuenta del daño. No se alegra por la injusticia, sino que se alegra con la verdad. Todo lo soporta, todo lo cree, todo lo espera, todo lo aguanta..",
-      reflection: "No puedo evitar pensar en ti. Este pasaje describe un amor que se demuestra con hechos: paciencia, bondad, generosidad y un corazón que busca el bienestar de los demás. Son cualidades que veo que reflejas, especialmente en la forma tan cariñosa y dedicada con la que trata a tu familia. Me gusta ver cómo siempre estás pendiente de quienes amas y cómo, con tus acciones, demuestras ese amor del que habla la Biblia. Eso me recuerda que el amor verdadero no consiste solo en decir lo que sentimos, sino en demostrarlo cada día. Sin duda, esa manera de amar que tienes es una cualidad muy hermosa y un reflejo de los principios que Jehová nos enseña",
+      reflection: "No puedo evitar pensar en ti. Este pasaje describe un amor que se demuestra con hechos: paciencia, bondad, generosidad y un corazón que busca el bienestar de los demás. Son cualidades que veo que reflejas, especialmente en la forma tan cariñosa y dedicada con la que tratas a tu familia. Me gusta ver cómo siempre estás pendiente de quienes amas y cómo, con tus acciones, demuestras ese amor del que habla la Biblia. Eso me recuerda que el amor verdadero no consiste solo en decir lo que sentimos, sino en demostrarlo cada día. Sin duda, esa manera de amar que tienes es una cualidad muy hermosa y un reflejo de los principios que Jehová nos enseña",
     },
     {
       reference: "Cantar de los cantares 4:7",
