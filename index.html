@@ -167,21 +167,24 @@
 
         <section class="section reveal-section compact-section" aria-labelledby="secret-title">
           <div class="section-heading">
-            <p class="eyebrow">Rincón secreto</p>
-            <h2 id="secret-title">Hay algo más guardado aquí.</h2>
+            <p class="eyebrow">Pequeño reto</p>
+            <h2 id="secret-title">Una pregunta antes de abrir esto.</h2>
           </div>
           <form class="secret-form" id="secret-form">
-            <label for="secret-password">Contraseña</label>
+            <label for="secret-password">¿Quién es la persona para quien hice este universo?</label>
             <div class="secret-form__row">
               <input
                 id="secret-password"
                 name="password"
-                type="password"
+                type="text"
                 autocomplete="off"
-                placeholder="Escribe la palabra secreta"
+                placeholder="Escribe su nombre"
               />
               <button class="secondary-button" type="submit">Entrar</button>
             </div>
+            <p class="secret-form__hint" id="secret-hint" aria-live="polite">
+              Pista: está escrito en cada rincón de esta página.
+            </p>
           </form>
           <article class="secret-letter" id="secret-letter" hidden></article>
         </section>

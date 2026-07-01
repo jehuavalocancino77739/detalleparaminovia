@@ -1289,6 +1289,13 @@ body.gift-opened .time-greeting {
   border-color: rgba(234, 216, 173, 0.45);
 }
 
+.secret-form__hint {
+  margin: 12px 0 0;
+  color: var(--soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 .secondary-button {
   border-radius: 999px;
   padding: 14px 18px;

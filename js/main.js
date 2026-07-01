@@ -1,5 +1,5 @@
 const CONFIG = {
-  secretPassword: "alexandra",
+  secretAnswer: "alexandra",
   secretLetter:
     "Para Alexandra: si llegaste hasta aquí, quería que encontraras algo más íntimo. Gracias por ser mi calma, mi alegría y esa persona que convierte cualquier día común en algo que vale la pena recordar.",
   surpriseLetter:
@@ -563,15 +563,17 @@ function setupSurprises() {
 function setupSecretCorner() {
   const form = document.querySelector("#secret-form");
   const input = document.querySelector("#secret-password");
+  const hint = document.querySelector("#secret-hint");
   const letter = document.querySelector("#secret-letter");
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const isCorrect = input.value.trim() === CONFIG.secretPassword;
+    const isCorrect = normalizeAnswer(input.value) === normalizeAnswer(CONFIG.secretAnswer);
 
     if (!isCorrect) {
       input.value = "";
-      input.placeholder = "Prueba con otra palabra";
+      input.placeholder = "Intenta con su nombre completo";
+      hint.textContent = "Casi. Piensa en la persona para quien existe este pequeño universo.";
       form.animate(
         [
           { transform: "translateX(0)" },
@@ -588,6 +590,14 @@ function setupSecretCorner() {
     typeText(letter, CONFIG.secretLetter, 18);
     form.style.display = "none";
   });
+}
+
+function normalizeAnswer(value) {
+  return value
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 }
 
 function setupRevealObservers() {
