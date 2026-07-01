@@ -289,12 +289,13 @@ function renderLetters() {
     card.setAttribute("aria-expanded", "false");
 
     const title = createElement("h3", "", letter.title);
+    const cue = createElement("span", "interaction-cue", "Toca para abrir");
     const paper = createElement("div", "letter-card__paper");
     const paragraph = createElement("p");
     paragraph.dataset.message = letter.body;
     paper.append(paragraph);
 
-    card.append(title, paper);
+    card.append(title, cue, paper);
     card.addEventListener("click", () => openLetter(card, paragraph));
 
     grid.append(card);
@@ -517,7 +518,8 @@ function renderSpiritualCorner() {
 
     front.append(
       createElement("span", "", "Versículo favorito"),
-      createElement("strong", "", item.reference)
+      createElement("strong", "", item.reference),
+      createElement("small", "interaction-cue", "Toca para leer")
     );
 
     back.append(

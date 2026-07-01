@@ -718,6 +718,48 @@ body.gift-opened .time-greeting {
   transition: opacity 0.45s ease, transform 0.65s ease;
 }
 
+.interaction-cue {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: rgba(234, 216, 173, 0.86);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  opacity: 0.78;
+  transform: translateY(34px);
+  transition: opacity 0.35s ease, transform 0.55s ease, filter 0.55s ease;
+}
+
+.interaction-cue::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--gold);
+  box-shadow: 0 0 14px rgba(234, 216, 173, 0.55);
+  animation: cuePulse 2.6s ease-in-out infinite;
+}
+
+.letter-card:hover .interaction-cue,
+.spiritual-card:hover .interaction-cue {
+  opacity: 1;
+  filter: drop-shadow(0 0 12px rgba(234, 216, 173, 0.18));
+}
+
+.letter-card.is-open .interaction-cue,
+.spiritual-card.is-open .interaction-cue {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
 .letter-card__paper {
   position: absolute;
   inset: 18px;
@@ -1200,6 +1242,14 @@ body.gift-opened .time-greeting {
   line-height: 1.1;
 }
 
+.spiritual-card__front .interaction-cue {
+  margin-top: 12px;
+  color: rgba(234, 216, 173, 0.82);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  transform: translateY(0);
+}
+
 .spiritual-card__back {
   transform: rotateY(180deg);
   display: block;
@@ -1623,6 +1673,19 @@ body.gift-opened .time-greeting {
   50% {
     opacity: 0.65;
     transform: translateZ(-26px) scale(1.05);
+  }
+}
+
+@keyframes cuePulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.82);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
   }
 }
 
