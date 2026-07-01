@@ -850,7 +850,10 @@ function drawConstellation(now) {
   context.restore();
 }
 
-function openGift() {
+function openGift(event) {
+  event?.preventDefault();
+  if (openGiftButton.disabled || body.classList.contains("gift-opened")) return;
+
   giftBox.classList.add("opening");
   body.classList.add("magic-started");
   openGiftButton.disabled = true;
@@ -888,6 +891,8 @@ function init() {
   window.addEventListener("resize", resizeCanvas);
   window.setInterval(applyDynamicTheme, 60 * 1000);
   openGiftButton.addEventListener("click", openGift);
+  openGiftButton.addEventListener("touchend", openGift, { passive: false });
+  openGiftButton.addEventListener("pointerup", openGift);
 
   if (!animationStarted) {
     animationStarted = true;
